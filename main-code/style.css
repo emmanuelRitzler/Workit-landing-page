@@ -1,0 +1,93 @@
+@font-face {
+    font-family: Fraunces;
+    src: url(assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-purple: #24053E;
+    --eucalyptus: #44FFA1;
+    --white: #fff;
+    --ghost-white: #FCF8FF;
+    --davy-grey: #584D62;
+
+    --big-heading: Fraunces, serif;
+    --bh-size: 5rem;
+    --bh-line-spacing: 80px;
+    --bh-weight: 600;
+
+    --medium-heading: Fraunces, serif;
+    --mh-size: 3.5rem;
+    --mh-line-spacing: 64px;
+    --mh-weight: 600;
+
+    --small-heading: Fraunces, serif;
+    --sh-size: 2rem;
+    --sh-line-spacing: 40px;
+    --sh-weight: 600;
+
+    --body-text: Manrope, sans-serif;
+    --body-size: 1.125rem;
+    --body-line-spacing: 32px;
+    --body-weight: 400;
+}
+
+.hero {
+    height: auto;
+    background-color: var(--dark-purple);
+}
+
+/* HERO */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 15px 0px 15px;
+    align-items: center;
+    height: 34px;
+    margin: 0px 0px 90px 0px;
+}
+
+header img {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+header p {
+    font-family: var(--body-text);
+    color: var(--white);
+    border-bottom: var(--eucalyptus) 2px solid;
+    padding-bottom: 2px;
+
+    &:hover {
+        color: var(--eucalyptus);
+    }
+}
+
+h1 {
+    width: 98%;
+    font-size: 3.7vh;
+    color: var(--white);
+    line-height: 50px;
+    text-align: center;
+    padding: 0px 15px;
+    margin: 0 auto;
+    font-weight: var(--bh-weight);
+}
+
+#banner-image {
+    width: 90%;
+    height: auto;
+}
