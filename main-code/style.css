@@ -45,12 +45,23 @@
 
 .hero {
     width: 100%;
-    border-radius: 0px 0px 20px 20px;
-    position: absolute;
+    position: relative;
     height: auto;
-    background-color: var(--dark-purple);
     text-align: center;
-    z-index: 2;
+    margin-bottom: 140px;
+}
+
+.hero::before{
+    position: absolute;
+    border-radius: 100%;
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    bottom: 0;
+    content: '';
+    background: var(--dark-purple);
+    z-index: -1;
+    
 }
 
 /* HERO */
@@ -97,6 +108,11 @@ h1 {
     font-weight: var(--bh-weight);
 }
 
+.underline-word {
+    border-bottom: var(--eucalyptus) 2px solid;
+    font-size: 3.7vh;
+}
+
 .button {
     font-family: var(--body-text);
     display: inline-block;
@@ -106,18 +122,37 @@ h1 {
     color: var(--dark-purple);
     text-align: center;
     padding: 15px;
-    margin: 30px auto 70px auto;
+    margin: 30px auto 120px auto;
     font-weight: 600;
 }
-
-/* ACTIONS */
 
 #banner-image {
     width: 300px;
     height: auto;
     position: absolute;
-    top: 44%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+/* ACTIONS */
+
+#white-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+}
+
+.number-circle {
+    width: 56px;
+    height: 56px;
+    border: solid 2px black;
+    border-radius: 50%;
+    background-color: transparent;
+    font-family: var(--big-heading);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
