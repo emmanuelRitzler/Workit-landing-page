@@ -44,8 +44,13 @@
 }
 
 .hero {
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
     height: auto;
     background-color: var(--dark-purple);
+    text-align: center;
+    z-index: 2;
 }
 
 /* HERO */
@@ -76,6 +81,11 @@ header p {
     }
 }
 
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 h1 {
     width: 98%;
     font-size: 3.7vh;
@@ -87,7 +97,27 @@ h1 {
     font-weight: var(--bh-weight);
 }
 
-#banner-image {
-    width: 90%;
+.button {
+    font-family: var(--body-text);
+    display: inline-block;
+    width: 38%;
     height: auto;
+    background-color: var(--eucalyptus);
+    color: var(--dark-purple);
+    text-align: center;
+    padding: 15px;
+    margin: 30px auto 70px auto;
+    font-weight: 600;
+}
+
+/* ACTIONS */
+
+#banner-image {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
